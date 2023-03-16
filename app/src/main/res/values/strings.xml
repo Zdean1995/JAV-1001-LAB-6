@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Lab 6 Todo</string>
+    <string name="txt_title">To Do</string>
 </resources>
