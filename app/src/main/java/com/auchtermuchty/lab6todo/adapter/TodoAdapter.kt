@@ -13,7 +13,7 @@ class TodoAdapter(private val context: Context)
 
     private var todoStrings: MutableList<String> = mutableListOf()
 
-    class TodoViewHolder (private val view: View) : RecyclerView.ViewHolder(view) {
+    class TodoViewHolder (view: View) : RecyclerView.ViewHolder(view) {
         val checkedTextView = view.findViewById(R.id.txt_todo) as CheckedTextView
     }
 
@@ -26,7 +26,7 @@ class TodoAdapter(private val context: Context)
     override fun getItemCount() = todoStrings.size
 
     override fun onBindViewHolder(holder: TodoViewHolder, position: Int) {
-        holder.checkedTextView.text = todoStrings[position]
+        holder.checkedTextView.text = todoStrings[0]
     }
 
     fun addTodoItem(todoString: String) {
